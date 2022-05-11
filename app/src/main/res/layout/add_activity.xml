@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/dp16"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <EditText
+        android:id="@+id/flatNoId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:hint="@string/flatNo"
+        android:inputType="number"
+        />
+
+    <EditText
+        android:id="@+id/nameId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flatNoId"
+        android:hint="@string/name"
+        />
+
+    <RadioGroup
+        android:id="@+id/radioGrpId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameId">
+
+        <RadioButton
+            android:id="@+id/radioMaintainId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/maintenance"
+            android:checked="true"
+            />
+
+        <RadioButton
+            android:id="@+id/radioOtherId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/others"
+            />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/paymentDateId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/payment_date"
+        android:focusable="false"
+        android:clickable="false"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGrpId"/>
+
+    <EditText
+        android:id="@+id/maintenanceDateId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/maintenance_date"
+        android:focusable="false"
+        android:clickable="false"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/paymentDateId"/>
+
+
+
+    <EditText
+        android:id="@+id/amountId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/amount"
+        android:inputType="numberDecimal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/maintenanceDateId"/>
+
+    <EditText
+        android:id="@+id/remarkId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/remark"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/amountId"/>
+
+    <Button
+        android:id="@+id/okButtonId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/remarkId"/>
+
+    <Button
+        android:id="@+id/cancelButtonId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/remarkId"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

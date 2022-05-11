@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="flatNo">Flat No.</string>
+    <string name="name">Name</string>
+    <string name="payment_date">Payment Date</string>
+    <string name="maintenance_date">Maintenance Date</string>
+    <string name="maintenance">Maintenance</string>
+    <string name="others">Others</string>
+    <string name="amount">Amount</string>
+    <string name="remark">Remark</string>
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+    <string name="addButton">Add</string>
+    <string name="exportButton">Export</string>
+    <string name="listButton">List</string>
+
+</resources>
