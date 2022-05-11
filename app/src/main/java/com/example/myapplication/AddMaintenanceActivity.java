@@ -127,6 +127,8 @@ boolean isMaintenanceMode(){
 
     }
 
+
+
     private boolean isValidate() {
 
            String flatNo = flatNoId.getText().toString();
